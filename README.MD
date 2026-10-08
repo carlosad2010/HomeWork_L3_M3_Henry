@@ -1,6 +1,16 @@
+<p align="center">
+  <a href="https://pokeapi.co/">
+    <img src="./assets/pokeapi-logo.png" alt="Logo de PokéAPI" width="280">
+  </a>
+</p>
+
 # Buscador de Pokémon
 
 Aplicación web ligera para buscar Pokémon por nombre o número de Pokédex y consultar algunos de sus datos. Consume la [PokéAPI](https://pokeapi.co/) y muestra una ilustración oficial junto con información básica.
+
+## API utilizada
+
+La información de los Pokémon se obtiene de **PokéAPI**. Visita la página oficial: [https://pokeapi.co/](https://pokeapi.co/).
 
 ## Demo en línea
 
@@ -40,6 +50,8 @@ Se necesita conexión a internet para consultar la API y cargar las ilustracione
 
 ```text
 .
+├── assets/
+│   └── pokeapi-logo.png # Logo de PokéAPI, enlazado desde este README
 ├── index.html       # Estructura y formulario de búsqueda
 ├── styles.css       # Estilos de la interfaz
 └── src/
