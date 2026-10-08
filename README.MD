@@ -2,6 +2,10 @@
 
 Aplicación web ligera para buscar Pokémon por nombre o número de Pokédex y consultar algunos de sus datos. Consume la [PokéAPI](https://pokeapi.co/) y muestra una ilustración oficial junto con información básica.
 
+## Demo en línea
+
+Prueba la aplicación publicada en GitHub Pages: [Buscador de Pokémon](https://carlosad2010.github.io/HomeWork_L3_M3_Henry/).
+
 ## Funcionalidades
 
 - Busca Pokémon por nombre o ID, por ejemplo `pikachu` o `25`.
@@ -19,7 +23,7 @@ Aplicación web ligera para buscar Pokémon por nombre o número de Pokédex y c
 
 No se requieren dependencias ni instalación de paquetes.
 
-## Cómo ejecutar el proyecto
+## Uso local
 
 Como la aplicación utiliza módulos JavaScript, ejecútala desde un servidor local en lugar de abrir `index.html` directamente como archivo.
 
