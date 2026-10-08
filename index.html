@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Buscador con Fetch</title>
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell">
+    <header class="app-heading">
+      <span class="app-eyebrow"><span class="status-dot"></span> EXPLORADOR DE API</span>
+      <h1>Buscador de Pokemones</h1>
+      <p>Encuentra un pokemon por su nombre.</p>
+    </header>
+
+    <section class="search-panel" aria-label="Buscar un pokemon">
+      <form id="search-form">
+        <label for="search-input">Nombre del pokemon</label>
+        <div class="search-controls">
+          <input
+            type="text"
+            id="search-input"
+            placeholder="Por ejemplo, pikachu"
+            min="1"
+            max="200"
+            required
+          >
+          <button type="submit">
+            <span>Buscar Pokemon</span>
+            <span class="button-arrow" aria-hidden="true">→</span>
+          </button>
+        </div>
+        <p class="input-hint">Ingresa el nombre de un pokemon, algunos ejemplos: pikachu, butterfree, blastoise,kakuna</p>
+      </form>
+    </section>
+
+    <div id="loading" class="loading hidden" role="status" aria-live="polite">
+      <div class="spinner" aria-hidden="true"></div>
+      <p>Buscando los datos…</p>
+    </div>
+
+    <section id="content" class="content hidden" aria-live="polite"></section>
+
+    <section id="error" class="error hidden" role="alert">
+      <div class="error-icon" aria-hidden="true">!</div>
+      <div class="error-copy">
+        <h2>No pudimos completar la búsqueda</h2>
+        <p id="error-message"></p>
+      </div>
+      <button id="retry-btn" type="button">Intentar de nuevo</button>
+    </section>
+  </main>
+
+  <script type="module" src="src/main.js"></script>
+</body>
+</html>
